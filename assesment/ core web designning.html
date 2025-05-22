@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue;
+    padding: 15px 40px;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+
+.navbar-logo .logo-label {
+    font-size: 24px;
+    color: skyblue;
+}
+
+
+.navbar-menu {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-label {
+    color: black;
+    font-size: 18px;
+    
+}
+
+
+
+
+
+.dropdown-content {
+    display: none;
+    background-color:red;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.dropdown-label {
+    padding: 10px 20px;
+    color:blue;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+
+        <div class="navbar-logo">
+            <label class=""> logo</label>
+        </div>
+        <div class="navbar-menu">
+
+         <div class="nav-item">
+            <label class="">home</label>
+         </div>
+         
+         
+         <div class="nav-item dropdown">
+
+
+          <label class="nav-label">services</label>
+          
+          <div class="dropdown-content">
+            <label class="dropdown-label">web Design</label>
+            <label class="dropdown-label">marketing</label>
+            <label class="dropdown-label">wordpress</label>
+          </div>
+         </div>
+
+         <div class="nav-item">
+            <label class="nav-label">contact</label>
+         </div>
+        </div>
+
+    </div>
+</body>
+</html>
