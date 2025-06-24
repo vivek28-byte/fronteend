@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 50%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 1em 0 0.5em;
+      font-size: 1.2em;
+    }
+
+    .card p {
+      margin-bottom: 1em;
+      color: #333;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://www.gonoise.com/cdn/shop/files/1-Air-Buds-mini-carousel_a9e8ce56-6485-4958-b9d5-9dedc2f356fa.png?v=1695119262" alt="Product 1">
+      <h3>Noise air buds mini</h3>
+      <p>$17.15</p>
+    </div>
+    <div class="card">
+      <img src="https://www.gonoise.com/cdn/shop/files/AirClipsPurple_5.webp?v=1746444346" alt="Product 2">
+      <h3>noise air clips</h3>
+      <p>$35.12</p>
+    </div>
+    <div class="card">
+      <img src="https://www.boat-lifestyle.com/cdn/shop/files/main_img_alpha_700x.png?v=1721649247" alt="Product 3">
+      <h3>boat airdopes deadpool edition</h3>
+      <p>$12.87</p>
+    </div>
+    <div class="card">
+      <img src="https://www.gonoise.com/cdn/shop/products/Icon2-4.png?v=1681610912" alt="Product 4">
+      <h3>Noise colorfit icon 2</h3>
+      <p>$16.38</p>
+    </div>
+    <div class="card">
+      <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1680607448636/e819e13a52870d4fe5c24097f0d84c2a.png" alt="Product 5">
+      <h3>vivo t2 5g</h3>
+      <p>$210.77</p>
+      </div>
+      <div class="card">
+        <img src="https://www.gonoise.com/cdn/shop/files/1.3_734c2ee5-9b5a-4dd1-aae0-2c7909fb5d8a.png?v=1686303983" alt="Product 4">
+        <h3>Noise buds trance</h3>
+        <p>$11.70</p>
+      </div>
+      <div class="card">
+        <img src="https://exstatic-in.vivo.com/Oz84QB3Wo0uns8j1/in/1733896374853/a2fdcc5f370752f99ec916382b41d2d4.png.webp" alt="Product 4">
+        <h3>vivo x200</h3>
+        <p>$772.85</p>
+      </div>
+      
+      
+      <div class="card">
+        <img src="https://image01.realme.net/general/20250516/17473723787646d27e99629a44483bf51d54eb68d9b2f.png?width=1440&height=1440&size=449981" alt="Product 4">
+        <h3>realme gt 7t</h3>
+        <p>$409.84</p>
+      </div>
+      <div class="card">
+        <img src="https://nobero.com/cdn/shop/files/WhatsApp_Image_2024-08-28_at_12.44.39_PM.jpg?v=1724836514&width=360" alt="Product 4">
+        <h3>classic fit t-shirt</h3>
+        <p>$5.84</p>
+      </div>

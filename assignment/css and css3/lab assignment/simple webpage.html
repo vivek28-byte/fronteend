@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        body{
+            display:flex;
+            flex-direction: column;
+            min-height: 700px;
+        }
+        header, footer{
+            background-color:skyblue;
+            color: blue;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .sidebar{
+            background-color: white;
+            width: 200px;
+            padding: 1rem;
+        }
+
+        .main{
+            flex: 1;
+            background-color: #eaeaea;
+            padding: 1rem;
+
+        }
+
+        footer{
+            background-color:firebrick;
+            color:white;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width:768px){
+            .container{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                width: 100px;
+                text-align: center;
+
+            }
+            .main{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>my webpage</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>sidebar</h2>
+            <p>left side sidebar with other content</p>
+        </aside>
+
+        <main class="main">
+            <h2>main content </h2>
+            <p>main content area center</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>footer content </p>
+    </footer>
+</body>
+</html>

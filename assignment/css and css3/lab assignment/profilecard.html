@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height:700px;
+            background-color:white;
+        }
+        .profile-card{
+            width: 300px;
+            margin: auto;
+            background-color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .profile-image{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border:3px solid pink;
+            margin-bottom:15px;
+            box-sizing: content-box;
+
+
+        }
+        .profile-name{
+            font-size:1.5em;
+            font-weight: bold;
+        }
+
+        .profile.bio {
+            font-size: 0.95em;
+            color:bisque;
+            margin-bottom: 20px;
+        
+            
+        }
+
+        .follow-btn{
+            padding : 10px 20px;
+            background-color:blue;
+            border:none;
+            color: white;
+            border-radius: 5px;
+            cursor:pointer;
+            box-sizing: border-box;
+
+        }
+
+        .follow-btn:hover{
+            background-color:blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="profile-card">
+        <img class="profile-images" src="/profile_photo_with_bgc.png" alt="">
+        <div class="profile-name">panchal vivek</div>
+        <div class="profile-bio">study  frontend</div>
+        <button class="follow-btn">Follow</button>
+    </div>
+    
+</body>
+</html>
